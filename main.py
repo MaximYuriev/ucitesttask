@@ -2,9 +2,9 @@ import random
 from functools import reduce
 
 
-#Ссылка на git:
+#Ссылка на git: https://github.com/MaximYuriev/ucitesttask
 
-def deco(func):
+def deco(func): # декоратор, обрабатывающие ошибки при взаимодействии с функциями
     def wrapper(array: list[int]):
         if not isinstance(array, list):
             raise TypeError('Функция работает только со списками!')
